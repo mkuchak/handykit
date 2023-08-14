@@ -1,0 +1,44 @@
+{
+  "name": "handykit",
+  "version": "0.1.8",
+  "description": "Essential toolkit for streamlined JavaScript coding with versatile utility functions",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkuchak/handykit.git"
+  },
+  "author": {
+    "name": "Marcos Kuchak",
+    "email": "mkuchak@gmail.com",
+    "url": "https://kuch.dev"
+  },
+  "keywords": [
+    "utility",
+    "library",
+    "random",
+    "manipulation",
+    "type checking",
+    "streamline",
+    "coding",
+    "efficiency",
+    "developer",
+    "essential",
+    "toolkit"
+  ],
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "files": [
+    "./dist/"
+  ],
+  "scripts": {
+    "dev": "tsx watch ./src/examples.ts",
+    "build": "tsup ./src/index.ts --dts --minify --clean"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.10",
+    "tsup": "^7.2.0",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.6",
+    "vitest": "^0.34.1"
+  }
+}
